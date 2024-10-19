@@ -1,0 +1,52 @@
+<!-- Q.1) Write the HTML code for generating the form as shown below. Apply the internal CSS to 
+following form to change the font size of the heading to 6pt and change the color to red and also 
+change the background color to yellow. -->
+<html>
+<head>
+ <style>
+   fieldset{
+             background-color:cyan;
+             margin:8px 300px;
+           }
+   text{
+           padding:400px;   
+       }
+   #s1{
+        color:white;
+        margin-left:80px;
+        background-color:green;     
+      }
+   #s2{
+        color:white;
+        background-color:blue;     
+      }
+ </style>
+</head>
+  <body>
+    <text><u><b>Project Management</b></u></text>
+        <form>
+          <fieldset value="form_id">
+          Project Name
+           <input type="text" placeholder="project name"><br><br>
+          Assigned to
+           <select>
+              <option>abc</option>
+              <option>xyz</option>
+              <option>pyq</option>
+           </select> <br><br>
+          Start Date
+           <input type="date"><br><br>
+          End Date
+           <input type="date"><br><br>
+          Priority
+           <input type="radio" name="r1">High
+           <input type="radio" name="r1">Average
+ 	   <input type="radio" name="r1">Low <br><br>
+          Description
+           <textarea></textarea><br><br>
+           <input type="button" value="Submit" id="s1">
+           <input type="button" value="Clear" id="s2">
+          </fieldset>
+        </form>
+  </body>
+</html>

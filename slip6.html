@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Web Layout</title>
+    <link href="D:\webtechnology slip\bootstrap-4.0.0-dist\css\bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Full page layout */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .header {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .main-container {
+            display: flex;
+            height: calc(100% - 120px); /* Adjust height excluding header and footer */
+        }
+
+        .menu {
+            background-color: green;
+            color: white;
+            width: 200px;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: yellow;
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Your College Name</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="text-white">About Us</a></li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>College Information</h2>
+            <p>This is where you add the college information. You can provide details about the college here.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>College Address: [Your College Address Here]</p>
+    </div>
+
+</body>
+</html>
